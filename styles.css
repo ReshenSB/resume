@@ -189,7 +189,9 @@ td {
   }
 
   td:first-of-type {
-    transform: rotate(90deg);
+    writing-mode: vertical-rl;
+    -webkit-transform: scale(-1);
+    transform: scale(-1);
     text-align: center;
   }
 
@@ -216,6 +218,7 @@ td {
     height: 297mm;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+    background-color: #ffffff;
   }
 
   ul,
